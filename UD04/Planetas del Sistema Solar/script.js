@@ -29,6 +29,11 @@ for(let i = 0; i < nombres.length; i++) {
     listaPlanetas[i].fechaDescubrimiento = anyoDeDescubrimiento[i];
 }
 
+// Oredena los planetas de menor a mayor, por la distancia al sol
+listaPlanetas.sort((a, b) => {
+    return a.distancia-b.distancia
+});
+
 // Bucle para mostrar por consola los datos
 for(let i = 0; i < listaPlanetas.length ; i++) {
     console.log(listaPlanetas[i].mostrarInformacion());
