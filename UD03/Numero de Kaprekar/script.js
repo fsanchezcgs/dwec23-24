@@ -24,7 +24,12 @@ for(let i = 0;i < 7;i++) {
 
     // Se assigna el resultado de la resta a la variable del numero inicial
     numero = unidoInvertido - unidoNormal;
+    if (numero == 6174) {
+        // Se enseña por consola el resultado
+        console.log("Tu numero se a convertido en el numero de Kaprekar("+numero+") en "+i+" pasos");
+        break;
+    }
 }
 
-// Se enseña por consola el resultado
-console.log("Tu numero es "+numero);
+// Aviso de que algo ha hido mal
+console.log("Has hecho algo mal!!!");
